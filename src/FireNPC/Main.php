@@ -424,7 +424,7 @@ class Main extends PluginBase implements Listener {
         }
     }
 
-    private function loadAllNPCs(): void {
+    public function loadAllNPCs(): void {
         $npcs = $this->npcs->getAll();
 
         foreach ($npcs as $name => $data) {
