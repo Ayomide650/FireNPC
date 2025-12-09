@@ -1,0 +1,18 @@
+name: FireNPC
+version: 1.0.0
+main: FireNPC\Main
+api: 5.0.0
+author: Firekid846
+description: Custom stable NPC plugin for Firekid846's server
+
+commands:
+  firenpc:
+    description: Manage NPCs
+    usage: "/firenpc <spawn|remove|list|setskin|setname|addcommand|commands|tp>"
+    permission: firenpc.use
+    aliases: ["npc", "fnpc"]
+
+permissions:
+  firenpc.use:
+    description: Allows using all FireNPC commands
+    default: op
