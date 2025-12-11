@@ -134,6 +134,7 @@ class Main extends PluginBase implements Listener {
         $npc->setNameTag(TF::colorize("&e" . $name));
         $npc->setNameTagAlwaysVisible(true);
         $npc->setNameTagVisible(true);
+        $npc->setScale(1.0);
         $npc->spawnToAll();
 
         $this->npcEntities[$name] = $npc;
@@ -447,6 +448,7 @@ class Main extends PluginBase implements Listener {
                 $npc->setNameTag($data["nametag"]);
                 $npc->setNameTagAlwaysVisible(true);
                 $npc->setNameTagVisible(true);
+                $npc->setScale(1.0);
                 $npc->spawnToAll();
 
                 $this->npcEntities[$name] = $npc;
